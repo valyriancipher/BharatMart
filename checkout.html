@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Checkout Page - BharatMart Classic E-Commerce</title>
+    <!-- Linking External Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Internal <style> Tag Demonstrating Embedded CSS Rules -->
+    <style type="text/css">
+        .page-indicator {
+            font-family: "Courier New", Courier, monospace;
+            font-size: 12px;
+            color: #c59b27;
+            background-color: #132540;
+            padding: 3px 8px;
+            border: 1px solid #c59b27;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Anchor for Internal Linking -->
+    <a name="top"></a>
+
+    <!-- Website Header Banner -->
+    <div id="top-banner">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td width="100" align="left" valign="middle">
+                    <!-- Website Logo Image as a Link to Home Page (index.html) -->
+                    <a href="index.html" title="Kart-i-on Home Page">
+                        <img src="images/kart-i-on.jpg" alt="kart-i-on Logo - Shop the vibe. Trust the drive" width="84" height="84" border="2" align="middle" class="site-logo-img">
+                    </a>
+                </td>
+                <td align="left" valign="middle">
+                    <h1>Kart-i-on (BharatMart &trade;) Multi-Page E-Commerce</h1>
+                    <font size="2" color="#e6e1d6"><i>&ldquo;Shop the vibe. Trust the drive&rdquo; &bull; ESTD. 2026 &bull; Classic HTML 4.01 &amp; CSS Architecture</i></font>
+                </td>
+                <td align="right" valign="middle">
+                    <span class="page-indicator">FILE: checkout.html</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Master Navigation Bar Linking All 19 HTML Webpages -->
+    <div id="navigation-bar">
+        <a href="index.html">Home</a> |
+        <a href="categories.html">All Categories</a> |
+        <a href="category_list.html">Category List</a> |
+        <a href="products.html">Products</a> |
+        <a href="product_detail.html">Product Detail</a> |
+        <a href="wishlist.html">Wishlist</a> |
+        <a href="cart.html">Cart</a> |
+        <a href="checkout.html">Checkout</a> |
+        <a href="my_orders.html">My Orders</a> |
+        <a href="my_data.html">My Data</a> |
+        <a href="signup.html">Sign Up</a> |
+        <a href="about.html">About Us</a> |
+        <a href="contributors.html">Contributors</a> |
+        <a href="faq.html">FAQ</a> |
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <!-- Main Container -->
+    <div id="main-container">
+
+        <h2>Secure Order Checkout Form</h2>
+        <p>Complete your delivery and payment details below. Submitting this form takes you to the <a href="thank_you.html">Thank You Order Confirmation Page</a>.</p>
+
+        <form action="thank_you.html" method="get">
+            <table class="classic-table" border="1" cellpadding="8" cellspacing="0" width="100%">
+                <tr>
+                    <th colspan="2">1. Customer &amp; Delivery Address Details</th>
+                </tr>
+                <tr>
+                    <td width="32%"><b>Full Name (Text Box):</b></td>
+                    <td><input type="text" name="fullname" value="Aarav Sharma"></td>
+                </tr>
+                <tr class="alt-row">
+                    <td><b>Email Address for Receipt (Text Box):</b></td>
+                    <td><input type="text" name="cust_email" value="valyriancipher1001@gmail.com"></td>
+                </tr>
+                <tr class="alt-row">
+                    <td><b>Account Password for Express Checkout (Password Field):</b></td>
+                    <td><input type="password" name="userpass" value="secret123"></td>
+                </tr>
+                <tr>
+                    <td><b>Select State / Region (Drop-Down List):</b></td>
+                    <td>
+                        <select name="state">
+                            <option value="UP" selected="selected">Uttar Pradesh</option>
+                            <option value="DL">Delhi NCR</option>
+                            <option value="MH">Maharashtra</option>
+                            <option value="KA">Karnataka</option>
+                            <option value="TN">Tamil Nadu</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="alt-row">
+                    <td><b>Preferred Delivery Time Slot (Combo Box / Multi-Select):</b></td>
+                    <td>
+                        <select name="delivery_slot" size="3" multiple="multiple">
+                            <option value="morning" selected="selected">Morning (9:00 AM - 12:00 PM)</option>
+                            <option value="afternoon">Afternoon (12:00 PM - 4:00 PM)</option>
+                            <option value="evening">Evening (4:00 PM - 8:00 PM)</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Complete Street Address &amp; Landmark (Multi-line Text Field):</b></td>
+                    <td>
+                        <textarea name="address" rows="4" cols="45">42 Hazratganj Main Road, Near Central Post Office, Lucknow - 226001</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">2. Payment Method &amp; Preferences</th>
+                </tr>
+                <tr class="alt-row">
+                    <td><b>Payment Mode (Radio Buttons):</b></td>
+                    <td>
+                        <input type="radio" name="paymode" value="upi" checked="checked"> Instant UPI / QR Code<br>
+                        <input type="radio" name="paymode" value="card"> Credit / Debit Card (Visa / MasterCard / RuPay)<br>
+                        <input type="radio" name="paymode" value="cod"> Cash on Delivery (COD)
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Order Preferences (Checkboxes):</b></td>
+                    <td>
+                        <input type="checkbox" name="gst_invoice" value="yes" checked="checked"> Include Printed Tax Invoice<br>
+                        <input type="checkbox" name="eco_box" value="yes" checked="checked"> Use 100% Recyclable Eco-Packaging<br>
+                        <input type="checkbox" name="terms_agree" value="yes" checked="checked"> I agree to the <a href="terms.html">Terms &amp; Conditions</a>
+                    </td>
+                </tr>
+                <tr class="alt-row">
+                    <td colspan="2" align="right">
+                        <input type="reset" value="Clear Form (Reset Button)" class="btn-secondary">
+                        <input type="button" value="Verify Pincode (Button)" class="btn-secondary">
+                        <input type="submit" value="Place Order &amp; View Confirmation &rarr;" class="btn-primary">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    
+        <div class="clearfix"></div>
+        <hr noshade="noshade">
+        <p align="right">
+            <!-- Internal Linking to #top of current page -->
+            <a href="#top" class="btn-secondary">&uarr; Back to Top of Page</a>
+        </p>
+    </div>
+
+    <!-- Footer with Policy Links, External Link, and Email Link -->
+    <div id="footer-section">
+        <p style="text-align:center; text-indent:0px;">
+            <b>Official Store Policies:</b>
+            <a href="shipping_policy.html" style="color:#f4d068;">Shipping &amp; Delivery Policy</a> &bull;
+            <a href="return_policy.html" style="color:#f4d068;">Return &amp; Refund Policy</a> &bull;
+            <a href="privacy_policy.html" style="color:#f4d068;">Privacy Policy</a> &bull;
+            <a href="terms.html" style="color:#f4d068;">Terms &amp; Conditions</a> |
+            <a href="faq.html#shipping-faq" style="color:#ffffff;">Jump to Shipping FAQ (#shipping-faq)</a>
+        </p>
+        <p style="text-align:center; text-indent:0px;">
+            Customer Support Email: <a href="mailto:valyriancipher1001@gmail.com?subject=Customer%20Inquiry" style="color:#f4d068;">valyriancipher1001@gmail.com</a> |
+            External Reference: <a href="https://www.w3.org/TR/html401/" target="_blank" style="color:#f4d068;">W3C HTML 4.01 Specification (External Link)</a>
+        </p>
+        <p style="text-align:center; text-indent:0px;">
+            &copy; 2026 BharatMart E-Commerce Project &reg; &mdash; All Rights Reserved. Prices listed in &#8377; (INR), &#36; (USD), &euro; (EUR), &amp; &pound; (GBP).
+        </p>
+    </div>
+
+</body>
+</html>

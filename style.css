@@ -1,0 +1,274 @@
+/* ==========================================================================
+   EXTERNAL STYLE SHEET (style.css)
+   Demonstrating CSS Selectors, Font, Text, Background, Margin, Padding,
+   Border, Height, Width, and Float Properties for HTML 4.01 Website
+   ========================================================================== */
+
+/* 1. Universal & Type (Element) Selectors */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* Font Properties */
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.6;
+
+    /* Text Properties */
+    color: #222222;
+    text-align: left;
+
+    /* Background Properties */
+    background-color: #f4f1ea;
+    background-repeat: repeat;
+
+    /* Margin & Padding Properties */
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding: 0px;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #1b365d;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+
+p {
+    margin-top: 6px;
+    margin-bottom: 12px;
+    text-indent: 10px;
+}
+
+hr {
+    border-top: 1px solid #c8c2b6;
+    border-bottom: none;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+/* 2. ID Selectors */
+#top-banner {
+    background-color: #1b365d;
+    color: #ffffff;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: #c59b27;
+}
+
+#top-banner h1 {
+    color: #ffffff;
+    font-size: 28px;
+    margin: 0px;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+#navigation-bar {
+    background-color: #2c4a76;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 2px solid #132540;
+}
+
+#main-container {
+    width: 96%;
+    max-width: 1140px;
+    margin-top: 18px;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d6d0c4;
+}
+
+#footer-section {
+    clear: both;
+    background-color: #1b365d;
+    color: #e6e1d6;
+    text-align: center;
+    padding: 18px;
+    margin-top: 25px;
+    border-top: 4px solid #c59b27;
+    font-size: 13px;
+}
+
+/* 3. Class Selectors & Float Property */
+.float-left-sidebar {
+    float: left;
+    width: 24%;
+    background-color: #faf8f5;
+    padding: 14px;
+    margin-right: 2%;
+    border: 1px solid #dcd6c8;
+}
+
+.float-right-content {
+    float: left;
+    width: 74%;
+    padding: 10px;
+}
+
+.product-card-float {
+    float: left;
+    width: 31%;
+    min-height: 390px;
+    margin-right: 2%;
+    margin-bottom: 18px;
+    padding: 12px;
+    background-color: #ffffff;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #e0dbd1;
+    text-align: center;
+}
+
+.product-card-float img {
+    width: 100%;
+    height: 165px;
+    object-fit: cover;
+    border: 1px solid #cccccc;
+    margin-bottom: 8px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.price-badge {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: #8b261d;
+    background-color: #fdf5e6;
+    padding: 4px 10px;
+    border: 1px dashed #c59b27;
+    display: inline-block;
+    margin: 6px 0px;
+}
+
+.highlight-box {
+    background-color: #eef3f8;
+    border-left: 5px solid #1b365d;
+    padding: 12px 16px;
+    margin: 14px 0px;
+}
+
+.btn-primary {
+    background-color: #1b365d;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 8px 14px;
+    border: 2px outset #2c4a76;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 3px;
+}
+
+.btn-primary:hover {
+    background-color: #c59b27;
+    color: #1b365d;
+}
+
+.btn-secondary {
+    background-color: #e6e1d6;
+    color: #222222;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    padding: 7px 12px;
+    border: 1px solid #999999;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 3px;
+}
+
+/* 4. Descendant & Pseudo-Class Selectors */
+#navigation-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 6px 9px;
+    margin-right: 3px;
+    display: inline-block;
+}
+
+#navigation-bar a:hover {
+    background-color: #c59b27;
+    color: #1b365d;
+    text-decoration: underline;
+}
+
+/* 5. Table Styling */
+table.classic-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    margin-bottom: 18px;
+    background-color: #ffffff;
+}
+
+table.classic-table th {
+    background-color: #1b365d;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #132540;
+    text-align: left;
+}
+
+table.classic-table td {
+    padding: 9px 10px;
+    border: 1px solid #cccccc;
+    vertical-align: middle;
+}
+
+table.classic-table tr.alt-row {
+    background-color: #f9f7f2;
+}
+
+/* 6. Form Elements Styling */
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 6px 8px;
+    border: 1px solid #888888;
+    background-color: #fffef9;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Website Logo Styling in Header Banner */
+.site-logo-img {
+    width: 84px;
+    height: 84px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #c59b27;
+    vertical-align: middle;
+}

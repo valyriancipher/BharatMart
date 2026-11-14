@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Customer Sign Up Page - BharatMart Classic E-Commerce</title>
+    <!-- Linking External Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Internal <style> Tag Demonstrating Embedded CSS Rules -->
+    <style type="text/css">
+        .page-indicator {
+            font-family: "Courier New", Courier, monospace;
+            font-size: 12px;
+            color: #c59b27;
+            background-color: #132540;
+            padding: 3px 8px;
+            border: 1px solid #c59b27;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Anchor for Internal Linking -->
+    <a name="top"></a>
+
+    <!-- Website Header Banner -->
+    <div id="top-banner">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td width="100" align="left" valign="middle">
+                    <!-- Website Logo Image as a Link to Home Page (index.html) -->
+                    <a href="index.html" title="Kart-i-on Home Page">
+                        <img src="images/kart-i-on.jpg" alt="kart-i-on Logo - Shop the vibe. Trust the drive" width="84" height="84" border="2" align="middle" class="site-logo-img">
+                    </a>
+                </td>
+                <td align="left" valign="middle">
+                    <h1>Kart-i-on (BharatMart &trade;) Multi-Page E-Commerce</h1>
+                    <font size="2" color="#e6e1d6"><i>&ldquo;Shop the vibe. Trust the drive&rdquo; &bull; ESTD. 2026 &bull; Classic HTML 4.01 &amp; CSS Architecture</i></font>
+                </td>
+                <td align="right" valign="middle">
+                    <span class="page-indicator">FILE: signup.html</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Master Navigation Bar Linking All 19 HTML Webpages -->
+    <div id="navigation-bar">
+        <a href="index.html">Home</a> |
+        <a href="categories.html">All Categories</a> |
+        <a href="category_list.html">Category List</a> |
+        <a href="products.html">Products</a> |
+        <a href="product_detail.html">Product Detail</a> |
+        <a href="wishlist.html">Wishlist</a> |
+        <a href="cart.html">Cart</a> |
+        <a href="checkout.html">Checkout</a> |
+        <a href="my_orders.html">My Orders</a> |
+        <a href="my_data.html">My Data</a> |
+        <a href="signup.html">Sign Up</a> |
+        <a href="about.html">About Us</a> |
+        <a href="contributors.html">Contributors</a> |
+        <a href="faq.html">FAQ</a> |
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <!-- Main Container -->
+    <div id="main-container">
+
+        <h2>Create Your Customer Account (HTML Form Elements Showcase)</h2>
+        <p>
+            This registration form demonstrates every requested HTML 4.01 form control: <b>text box</b>, <b>password field</b>, <b>radio buttons</b>, <b>checkboxes</b>, <b>drop-down list</b>, <b>combo box (multi-select list)</b>, <b>multi-line text field (<tt>&lt;textarea&gt;</tt>)</b>, and <b>submit / reset / action buttons</b>.
+        </p>
+
+        <form action="my_data.html" method="get">
+            <table class="classic-table" border="1" cellpadding="8" cellspacing="0" width="100%">
+                <tr>
+                    <th colspan="2">New Member Registration Form</th>
+                </tr>
+                <tr>
+                    <td width="35%"><b>1. Full Name (Text Box):</b></td>
+                    <td><input type="text" name="username" value="" size="35" maxlength="50"></td>
+                </tr>
+                <tr class="alt-row">
+                    <td><b>2. Email Address (Text Box):</b></td>
+                    <td><input type="text" name="email" size="35"></td>
+                </tr>
+                <tr>
+                    <td><b>3. Create Password (Password Field):</b></td>
+                    <td><input type="password" name="password" value="" size="25"></td>
+                </tr>
+                <tr class="alt-row">
+                    <td><b>4. Account Type (Radio Buttons):</b></td>
+                    <td>
+                        <input type="radio" name="acct_type" value="student" checked="checked"> Student Member (Extra 15% Study Discount)<br>
+                        <input type="radio" name="acct_type" value="regular"> Regular Shopper<br>
+                        <input type="radio" name="acct_type" value="creator"> Music / Dance / Art Educator
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>5. Interested Product Categories (Checkboxes):</b></td>
+                    <td>
+                        <input type="checkbox" name="cat_stu" value="yes" checked="checked"> Students (Notebooks, Pens, Organizers)<br>
+                        <input type="checkbox" name="cat_mus" value="yes" checked="checked"> Music &amp; Dance (Guitars, Ghungroo, Monitors)<br>
+                        <input type="checkbox" name="cat_wat" value="yes"> Watches (Analog &amp; Chronograph)<br>
+                        <input type="checkbox" name="cat_dec" value="yes"> Homes &amp; Decor (Ceramic Lamps &amp; Vases)<br>
+                        <input type="checkbox" name="cat_ele" value="yes" checked="checked"> Electronic Devices (Headphones &amp; Smart Speakers)
+                    </td>
+                </tr>
+                <tr class="alt-row">
+                    <td><b>6. Primary City / Location (Drop-Down List):</b></td>
+                    <td>
+                        <select name="city">
+                            <option value="lucknow" selected="selected">Lucknow</option>
+                            <option value="kanpur">Kanpur</option>
+                            <option value="varanasi">Varanasi</option>
+                            <option value="delhi">New Delhi</option>
+                            <option value="mumbai">Mumbai</option>
+                            <option value="bengaluru">Bengaluru</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>7. Preferred Shopping Currencies &amp; Alerts (Combo Box):</b></td>
+                    <td>
+                        <select name="combo_prefs" size="4" multiple="multiple">
+                            <option value="inr" selected="selected">INR (&#8377;) - Indian Rupee Pricing</option>
+                            <option value="usd">USD (&#36;) - US Dollar Pricing</option>
+                            <option value="sms_alerts" selected="selected">SMS Order Dispatch Alerts</option>
+                            <option value="email_deals">Weekly Category Discount Newsletter</option>
+                        </select>
+                        <br><small><i>(Hold <kbd>Ctrl</kbd> or <kbd>Cmd</kbd> to select multiple options in the combo box)</i></small>
+                    </td>
+                </tr>
+                <tr class="alt-row">
+                    <td><b>8. Delivery Bio / Special Instructions (Multi-line Text Field):</b></td>
+                    <td>
+                        <textarea name="bio" rows="4" cols="45">Enter your preferred delivery hours or student ID notes here...</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right">
+                        <input type="button" value="Check Username Availability (Button)" class="btn-secondary">
+                        <input type="reset" value="Clear All Fields (Reset Button)" class="btn-secondary">
+                        <input type="submit" value="Complete Sign Up (Submit Button)" class="btn-primary">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    
+        <div class="clearfix"></div>
+        <hr noshade="noshade">
+        <p align="right">
+            <!-- Internal Linking to #top of current page -->
+            <a href="#top" class="btn-secondary">&uarr; Back to Top of Page</a>
+        </p>
+    </div>
+
+    <!-- Footer with Policy Links, External Link, and Email Link -->
+    <div id="footer-section">
+        <p style="text-align:center; text-indent:0px;">
+            <b>Official Store Policies:</b>
+            <a href="shipping_policy.html" style="color:#f4d068;">Shipping &amp; Delivery Policy</a> &bull;
+            <a href="return_policy.html" style="color:#f4d068;">Return &amp; Refund Policy</a> &bull;
+            <a href="privacy_policy.html" style="color:#f4d068;">Privacy Policy</a> &bull;
+            <a href="terms.html" style="color:#f4d068;">Terms &amp; Conditions</a> |
+            <a href="faq.html#shipping-faq" style="color:#ffffff;">Jump to Shipping FAQ (#shipping-faq)</a>
+        </p>
+        <p style="text-align:center; text-indent:0px;">
+            Customer Support Email: <a href="mailto:valyriancipher1001@gmail.com?subject=Customer%20Inquiry" style="color:#f4d068;">valyriancipher1001@gmail.com</a> |
+            External Reference: <a href="https://www.w3.org/TR/html401/" target="_blank" style="color:#f4d068;">W3C HTML 4.01 Specification (External Link)</a>
+        </p>
+        <p style="text-align:center; text-indent:0px;">
+            &copy; 2026 BharatMart E-Commerce Project &reg; &mdash; All Rights Reserved. Prices listed in &#8377; (INR), &#36; (USD), &euro; (EUR), &amp; &pound; (GBP).
+        </p>
+    </div>
+
+</body>
+</html>
